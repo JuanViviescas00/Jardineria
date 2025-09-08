@@ -1,7 +1,11 @@
-body{
-    margin: 0;
-}
 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f9f4;
+  color: #333;
+  line-height: 1.6;
+}
 .icono{
     margin-left: 80%;
 }
@@ -10,12 +14,10 @@ header {
   background-color:  #3a7d44;
   color: white;
   text-align: center;
-  padding: 30px 0   ;
-  padding-right: 0;
+  padding: 30px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  
 }
 
 header h1 {
@@ -41,8 +43,7 @@ header p {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    top: 50px; 
-    right: 50px;   
+    top: 50px;    
     
 }
 
@@ -79,63 +80,53 @@ h1.s1{
     background-color: #007004;
     width: 100%;
 }
-
-.s2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
+.titulos h1 {
+margin: 0;
+font-size: 1.8rem;
+color: white;
 }
 
-.s2 img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-radius: 10px;
+.titulos p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  color: #f6fdf6
 }
-
-.s2 div{
-    width: auto;;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #cdcdcd;
-    margin: 10px;  
-    border-radius: 10px;  
-    box-shadow: 5px 5px 15px #cecece;
+.consejos {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-
-.s2 div:hover{
-    transform: scale(1.02);
-        box-shadow: 5px 5px 15px #6a6a6a;
-
+.consejo {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.s2 h3{
-    font-size: 30px;
-    font-family: sans-serif;
+.consejo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
-
-.s2 p{
-    
-    font-size: 20px;
-    font-family: sans-serif;
-    width: 70%;
-    margin: auto;
+.consejo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
-.s2 li, ul{
-    
-    font-size: 20px;
-    font-family: sans-serif;
-    width: 70%;
-    margin: auto;
-    
+.contenido {
+  padding: 20px;
 }
-
-section h2{
-    text-align: center;
-    font-size: 50px;
-    width: auto;
+.contenido h2 {
+  margin-top: 0;
+  color:#3a7d44;
+  font-size: 1.4rem;
+}
+.contenido p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #555;
 }
 
 footer{

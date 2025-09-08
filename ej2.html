@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardinería y Vivero VerdeVida</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f9f4;
+      color: #333;
+    }
+    header {
+      background-color: #2d6a4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #40916c;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+    }
+    nav a:hover {
+      background: #1b4332;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1b4332;
+    }
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #2d6a4f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vivero y Jardinería VerdeVida</h1>
+    <p>Cuidamos tus plantas, cuidamos tu vida</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="hero">
+    Bienvenido a tu espacio verde
+  </div>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1592202170845-5d4af39fbd5e" alt="Diseño de jardines">
+        <h3>Diseño de Jardines</h3>
+        <p>Creamos espacios únicos y naturales adaptados a tu estilo de vida.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1597309031917-0e84e7cc06ef" alt="Venta de plantas">
+        <h3>Venta de Plantas</h3>
+        <p>Gran variedad de plantas ornamentales, frutales y medicinales.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Mantenimiento">
+        <h3>Mantenimiento</h3>
+        <p>Servicios de poda, riego, fertilización y cuidado de tus áreas verdes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <p style="text-align:center;">Muy pronto podrás ver algunos de nuestros proyectos realizados.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">📍 Dirección: Calle Verde #123, Ciudad Jardín</p>
+    <p style="text-align:center;">📞 Teléfono: +57 300 123 4567</p>
+    <p style="text-align:center;">✉️ Email: contacto@verdevida.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VerdeVida Jardinería y Vivero. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
