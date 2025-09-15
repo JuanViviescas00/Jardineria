@@ -54,7 +54,7 @@ header p {
 .boton{   
     display: inline-block;
     color: #007004;
-    padding: 12px 15px;
+    padding: 12px 10px;
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
@@ -63,7 +63,7 @@ header p {
     cursor: pointer;
     background: #6f71009c;
     transition: background 0.2s;
-    margin: 0 30px;
+    margin: 0 20px;
 
 }
 
@@ -91,7 +91,7 @@ h1{
 
 .clases{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     text-align: center;   
 }
 
@@ -109,6 +109,31 @@ h1{
     color: #007004; 
     background-color: #d7d7d741;
 
+}
+
+.tarjetas1 .content,
+.tarjetas2 .content,
+.tarjetas3 .content,
+.tarjetas4 .content
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.tarjetas1 span{
+    text-align: center;
+}
+
+
+.tarjetas1 video,
+.tarjetas2 video,
+.tarjetas3 video,
+.tarjetas4 video{
+    width: 70%;
+    height: 300px;
 }
 
 .tarjetas1:hover,
@@ -148,6 +173,7 @@ li{
 }
 
 footer{
+    display: grid;
     text-align: center;
     background-color: #007004;
     margin: auto;
@@ -155,9 +181,16 @@ footer{
     padding: 10px;
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    justify-content: space-evenly;
 }
+
+footer img{
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px #000;
+}
+
 
 
 @media(max-width:1750px){  
@@ -233,4 +266,11 @@ footer{
     .tarjetas1 li, .tarjetas2 li {
         margin: 10px 0;
     }
+}
+
+@media (max-width: 386px) {
+footer{
+    display: flex;
+    flex-direction: column;
+}
 }

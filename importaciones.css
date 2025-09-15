@@ -49,7 +49,7 @@ header p {
 .boton{   
     display: inline-block;
     color: #007004;
-    padding: 12px 15px;
+    padding: 12px 10px;
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
@@ -58,7 +58,7 @@ header p {
     cursor: pointer;
     background: #6f71009c;
     transition: background 0.2s;
-    margin: 0 30px;
+    margin: 0 20px;
 
 }
 
@@ -132,12 +132,22 @@ h1.s1{
 }
 
 footer{
+    display: grid;
     text-align: center;
     background-color: #007004;
     margin: auto;
     color: #fff;
     padding: 10px;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img{
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px #000;
 }
 
 @media(max-width:1750px){  
@@ -215,4 +225,11 @@ footer{
     .intro p {
         font-size: 1rem;
     }
+}
+
+@media (max-width: 386px) {
+footer{
+    display: flex;
+    flex-direction: column;
+}
 }

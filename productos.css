@@ -53,7 +53,7 @@ header p {
 .boton{   
     display: inline-block;
     color: #007004;
-    padding: 12px 15px;
+    padding: 12px 10px;
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
@@ -62,7 +62,7 @@ header p {
     cursor: pointer;
     background: #6f71009c;
     transition: background 0.2s;
-    margin: 0 30px;
+    margin: 0 20px;
 
 }
 
@@ -151,12 +151,22 @@ main {
 }
 
 footer{
+    display: grid;
     text-align: center;
     background-color: #007004;
     margin: auto;
     color: #fff;
     padding: 10px;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img{
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px #000;
 }
 
 @media(max-width:1750px){  
@@ -197,12 +207,6 @@ footer{
     }
 }
 
-@media (max-width: 700px) {
-    .s1 {
-        grid-template-columns: 1fr; 
-        padding: 15px;
-    }
-}
 
 @media (max-width: 768px) {
     .productos {
@@ -245,6 +249,12 @@ footer{
     }
 }
 
+@media (max-width: 700px) {
+    .s1 {
+        grid-template-columns: 1fr; 
+    }
+}
+
 @media (max-width: 480px) {
     .productos {
         grid-template-columns: 1fr;
@@ -263,10 +273,6 @@ footer{
         padding: 10px 12px;
         margin: 0 10px;
         font-size: 0.9rem;
-    }
-
-    .s1 {
-        padding: 10px;
     }
 
     .producto img {
@@ -289,5 +295,12 @@ footer{
         padding: 8px 12px;
         font-size: 0.85rem;
     }
+}
+
+@media (max-width: 386px) {
+footer{
+    display: flex;
+    flex-direction: column;
+}
 }
 
