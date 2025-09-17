@@ -76,8 +76,8 @@ h1.s1{
 
 .s1{
     background-color: #007004;
-    width: 100%;
 }
+
 .intro {
   text-align: center;
   padding: 30px 20px;
@@ -102,6 +102,14 @@ h1.s1{
   padding: 30px;
 }
 
+.precio {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #3a7d44;
+    font-size: 1.1rem;
+}
+
 .producto {
   background: white;
   padding: 15px;
@@ -109,6 +117,21 @@ h1.s1{
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease;
+}
+
+.boton-carrito {
+    background: #3a7d44;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.boton-carrito:hover {
+    background: #245125;
 }
 
 .producto img {
